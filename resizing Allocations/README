@@ -1,0 +1,30 @@
+Program Intention :
+===============================================================================================
+C language provides an interface for resizing (making larger or smaller) existing allocations
+
+===============================================================================================
+COMPILE :
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ make
+gcc -Wall -g -o pg268_resizing pg268_resizing.c;
+
+===============================================================================================
+Execution:
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ ./pg268_resizing 
+
+ Allocated the memory to struct map 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ 
+
+===============================================================================================
+Program Logic:
+===============================================================================================
+    A successful call to realloc( ) resizes the region of memory pointed at by ptr to a new 
+    size of size bytes.
+    It returns a pointer to the newly sized memory, which may or may not be the same as ptr
+    when enlarging a memory region, if realloc() is unable to enlarge the existing chunk 
+    of memory
+    Because of the potentiality of a copy operation, a realloc( ) operation to enlarge a memory
+    region can be a relatively costly act.
+
+
+
+
