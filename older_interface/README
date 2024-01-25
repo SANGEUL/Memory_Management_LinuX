@@ -1,0 +1,26 @@
+COMPILE :
+make
+gcc -Wall -g -o older_interface older_interface.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Memory_Management/older_interface$ ./older_interface
+
+ SUCCESFUL USE OF PIRATE AND HMS
+
+ NOW FREEING THE PIRATE AND HMS
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    This allocations return a block of memory sufficient to hold a ship structure, aligned along
+    a page boundary.
+    Linux programmers should use these two functions only for the purposes of portability with
+    older systems; posix_memalign() is superior.
+    All three of these interfaces are needed only if an alignment greater than that provided by
+    malloc( ) is required.
+
+
+
+
