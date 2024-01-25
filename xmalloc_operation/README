@@ -1,0 +1,28 @@
+Program Intention :
+===============================================================================================
+Allocates memory like malloc( ), but terminates on failure.
+
+
+===============================================================================================
+COMPILE :
+make
+gcc -Wall -g -o pg266_xmalloc pg266_xmalloc.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg266_xmalloc$ ./pg266_xmalloc
+
+ succesfull xmalloc()
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg266_xmalloc$
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    use of  malloc() wrapper that prints an error message and terminates the program if 
+    malloc( ) returns NULL . 
+    By convention, developers call this common wrapper xmalloc( )
+
+
+
+
