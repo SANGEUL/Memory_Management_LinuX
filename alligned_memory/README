@@ -1,0 +1,37 @@
+Program Intention :
+===============================================================================================
+Programmers require dynamic memory aligned along a larger boundary, such as a page.
+The most common is a need to properly align buffers used in direct block I/O or other
+software-to-hardware communication.
+For this purpose, POSIX 1003.1d provides a function named posix_memalign()
+
+
+===============================================================================================
+COMPILE :
+
+ make
+gcc -Wall -g -o alligned_memory alligned_memory.c;
+
+===============================================================================================
+Execution:
+linux@linux:~/Linux_programming/Memory_Management/alligned_memory$ ./alligned_memory
+
+ FREEING  THE  BUFFER
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    A successful call to posix_memalign( ) allocates size bytes of dynamic memory, ensuring it 
+    is aligned along a memory address that is a multiple of alignment.
+    The parameter alignment must be a power of 2, and a multiple of the size of a void pointer. 
+    The address of the allocated memory is placed in memptr , and the call returns 0
+    On failure, no memory is allocated, memptr is undefined, and the call returns one of the
+    following error codes:
+    EINVAL
+    The parameter alignment is not a power of 2, or is not a multiple of the size of a void 
+    pointer.
+    ENOMEM
+    There is insufficient memory available to satisfy the requested allocation.
+
+
+
