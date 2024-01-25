@@ -6,14 +6,14 @@ system when no longer in use via free()
 
 ===============================================================================================
 COMPILE :
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg269_free_dynamic_mem$ make
-gcc -Wall -g -o pg269_free_dynamic_mem pg269_free_dynamic_mem.c;
+linux@linux:~/Linux_programming/Memory_Management/free_dynamic_mem$ make
+gcc -Wall -g -o free_dynamic_mem free_dynamic_mem.c;
 
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg269_free_dynamic_mem$ ./pg269_free_dynamic_mem 
+linux@linux:~/Linux_programming/Memory_Management/free_dynamic_mem$ ./free_dynamic_mem 
 *
 **
 ***
