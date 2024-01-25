@@ -1,0 +1,29 @@
+Program Intention :
+===============================================================================================
+This program uses xcalloc() like malloc( ), but zeros memory and terminates on failure
+
+===============================================================================================
+COMPILE :
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ make
+gcc -Wall -g -o pg267_xcalloc pg267_xcalloc.c;
+
+
+===============================================================================================
+Execution:
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ ./pg267_xcalloc 
+
+ Successfull xcalloc() 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ 
+
+
+===============================================================================================
+Program Flow
+===============================================================================================
+        use of  malloc() wrapper that prints an error message and terminates the program if
+        malloc( ) returns NULL .
+        By convention, developers call this common wrapper xmalloc( )
+
+
+
+
+
