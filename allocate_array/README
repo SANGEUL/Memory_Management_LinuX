@@ -1,0 +1,31 @@
+COMPILE :
+make
+gcc -Wall -g -o allocate_array_op allocate_array.c;
+
+
+===============================================================================================
+Execution:
+linux@linux:~/Linux_programming/Memory_Management/allocate_array$ ./allocate_array
+
+ malloc() is succesful
+
+ calloc() is succesful
+linux@linux:~/Linux_programming/Memory_Management/allocate_array$
+
+
+
+
+Program Logic:
+===============================================================================================
+    Dynamic memory allocation may also be quite complex when the specified size is
+    itself dynamic. One such example is the dynamic allocation of arrays, where the size
+    of an array element may be fixed, but the number of elements to allocate is dynamic.
+    To simplify this scenario, C provides the calloc( ) function:
+    A successful call to calloc() returns a pointer to a block of memory suitable for holding
+    an array of nr elements, each of size bytes. 
+    Consequently, the amount of memory requested in these two calls is identical (either may 
+    end up returning more memory than requested, but never less)
+    calloc( ) zeros all bytes in the returned chunk of memory
+
+
+
