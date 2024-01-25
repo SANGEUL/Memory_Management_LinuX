@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-make: pg264_malloc.c
-	$(CC) $(CFLAGS) -o pg264_malloc pg264_malloc.c;
+make: malloc.c
+	$(CC) $(CFLAGS) -o malloc_op malloc.c;
  
 clean: 
-	rm -rf pg264_malloc
+	rm -rf malloc
      
