@@ -4,15 +4,15 @@ C language provides an interface for resizing (making larger or smaller) existin
 
 ===============================================================================================
 COMPILE :
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ make
-gcc -Wall -g -o pg268_resizing pg268_resizing.c;
+linux@linux:~/Linux_programming/Memory_Management/resizing$ make
+gcc -Wall -g -o resizing_op resizing.c;
 
 ===============================================================================================
 Execution:
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ ./pg268_resizing 
+linux@linux:~/Linux_programming/Memory_Management/resizing$ ./resizing_op
 
  Allocated the memory to struct map 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg268_resizing$ 
+linux@linux:~/Linux_programming/Memory_Management/resizing$ 
 
 ===============================================================================================
 Program Logic:
