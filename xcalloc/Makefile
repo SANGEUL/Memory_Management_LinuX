@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-make: pg267_xcalloc.c
-	$(CC) $(CFLAGS) -o pg267_xcalloc pg267_xcalloc.c;
+make: xcalloc.c
+	$(CC) $(CFLAGS) -o xcalloc_op xcalloc.c;
 
 clean: 
-	rm -rf pg267_xcalloc
+	rm -rf xcalloc_op
      
