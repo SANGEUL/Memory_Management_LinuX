@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-make: pg269_free_dynamic_mem.c 
-	$(CC) $(CFLAGS) -o pg269_free_dynamic_mem pg269_free_dynamic_mem.c;
+make: free_dynamic_mem.c 
+	$(CC) $(CFLAGS) -o free_dynamic_mem free_dynamic_mem.c;
 
 clean: 
-	rm -rf pg269_free_dynamic_mem
+	rm -rf free_dynamic_mem
      
