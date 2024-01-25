@@ -5,15 +5,15 @@ The classic C interface for obtaining dynamic memory is malloc( )
 ===============================================================================================
 COMPILE :
 make
-gcc -Wall -g -o pg264_malloc pg264_malloc.c;
+gcc -Wall -g -o malloc_op malloc.c;
 
 ===============================================================================================
 Executio:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg264_malloc$ ./pg264_malloc 
+linux@linux:~/Linux_programming/Memory_Management/malloc$ ./malloc_op 
 
  Allocated enough memory to hold a treasure_map stucture 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg264_malloc$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc$ 
 
 
 ===============================================================================================
@@ -22,7 +22,7 @@ Program Flow
     A successful call to malloc( ) allocates size bytes of memory, and returns a pointer to the
     start of the newly allocated region.
     The contents of the memory are undefined, do not expect the memory to be zeroed. Upon 
-    failure, malloc( ) returns NULL
+    failure, malloc( ) returns NULL. 
 
 
 
