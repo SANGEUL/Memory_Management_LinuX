@@ -1,0 +1,36 @@
+Program Intention :
+===============================================================================================
+the system call mmap( ) creates and
+the system call munmap( ) destroys a memory mapping
+
+
+===============================================================================================
+
+COMPILE :
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg276_Anonymous_Mem$ make
+gcc -Wall -g -o pg276_Anonymous_Mem pg276_Anonymous_Mem.c;
+ 
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg276_Anonymous_Mem$ ./pg276_Anonymous_Mem 
+ 
+ 'p' points at 512 KB of anonymous memory... 
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    The first parameter, start , is set to NULL , signifying that the anonymous mapping may
+    begin anywhere in memory that the kernel wishes.
+    The prot parameter usually sets both the PROT_READ and PROT_WRITE bits, making the mapping 
+    readable and writable.
+    The flags parameter sets the MAP_ANONYMOUS bit, making this mapping anonymous, and the 
+    MAP_PRIVATE bit, making this mapping private.
+    The fd and offset parameters are ignored when MAP_ANONYMOUS is set. Some older systems, 
+    however, expect a value of -1 for fd , so it is a good idea to pass that if portability 
+    is a concern
+
+
+
+
