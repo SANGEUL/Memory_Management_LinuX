@@ -7,14 +7,14 @@ the system call munmap( ) destroys a memory mapping
 ===============================================================================================
 
 COMPILE :
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg276_Anonymous_Mem$ make
-gcc -Wall -g -o pg276_Anonymous_Mem pg276_Anonymous_Mem.c;
+linux@linux:~/Linux_programming/Memory_Management/Anonymous_Mem$ make
+gcc -Wall -g -o Anonymous_Mem Anonymous_Mem.c;
  
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg276_Anonymous_Mem$ ./pg276_Anonymous_Mem 
+linux@linux:~/Linux_programming/Memory_Management/Anonymous_Mem$ ./Anonymous_Mem 
  
  'p' points at 512 KB of anonymous memory... 
 
