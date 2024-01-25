@@ -1,0 +1,38 @@
+Program Intention :
+===============================================================================================
+Memory allocated with malloc( ) , calloc( ) , or realloc( ) must be returned to the
+system when no longer in use via free()
+
+
+===============================================================================================
+COMPILE :
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg269_free_dynamic_mem$ make
+gcc -Wall -g -o pg269_free_dynamic_mem pg269_free_dynamic_mem.c;
+
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg269_free_dynamic_mem$ ./pg269_free_dynamic_mem 
+*
+**
+***
+****
+*****
+******
+*******
+
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    void free (void *ptr);
+    A call to free( ) frees the memory at ptr. The parameter ptr must have been previously 
+    returned by malloc() , calloc() , or realloc().
+    That is, you cannot use free() to free partial chunks of memory—say, half of a chunk of 
+    memory—by passing in a pointer halfway into an allocated block.
+    ptr may be NULL , in which case free( ) silently returns.
+
+
+
+
