@@ -6,15 +6,15 @@ Allocates memory like malloc( ), but terminates on failure.
 ===============================================================================================
 COMPILE :
 make
-gcc -Wall -g -o pg266_xmalloc pg266_xmalloc.c;
+gcc -Wall -g -o xmalloc_op xmalloc.c;
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg266_xmalloc$ ./pg266_xmalloc
+linux@linux:~/Linux_programming/Memory_Management/xmalloc$ ./xmalloc_op
 
  succesfull xmalloc()
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg266_xmalloc$
+linux@linux:~/Linux_programming/Memory_Management/xmalloc$
 
 ===============================================================================================
 Program Flow
