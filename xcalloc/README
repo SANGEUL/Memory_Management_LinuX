@@ -1,19 +1,15 @@
-Program Intention :
-===============================================================================================
-This program uses xcalloc() like malloc( ), but zeros memory and terminates on failure
-
 ===============================================================================================
 COMPILE :
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ make
-gcc -Wall -g -o pg267_xcalloc pg267_xcalloc.c;
+linux@linux:~/Linux_programming/Memory_Management/xcalloc$ make
+gcc -Wall -g -o xcalloc_op xcalloc.c;
 
 
 ===============================================================================================
 Execution:
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ ./pg267_xcalloc 
+linux@linux:~/Linux_programming/Memory_Management/xcalloc$ ./xcalloc_op 
 
  Successfull xcalloc() 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg267_xcalloc$ 
+linux@linux:~/Linux_programming/Memory_Management/xcalloc$ 
 
 
 ===============================================================================================
