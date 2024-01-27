@@ -6,25 +6,25 @@ obtain zero-filled memory.
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ make
-gcc -Wall -g -o pg278_Map_dev_zero pg278_Map_dev_zero.c;
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ 
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$ make
+gcc -Wall -g -o Map_dev_zero Map_dev_zero.c;
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$ 
 
 ===============================================================================================
 Execution:
 
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ ./pg278_Map_dev_zero
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$ ./Map_dev_zero
 
 ONLY ONE ARGUMENT IS PASSED
 ENTER THE SECOND ARGUMENT
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ ./pg278_Map_dev_zero /dev/zero
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$ ./Map_dev_zero /dev/zero
 
   map [0,page size) of /dev/zero
 
  'p' points at one page of memory, use it...
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$
+linux@linux:~/Linux_programming/Memory_Management/Map_dev_zero$
 
 ===============================================================================================
 Program Flow
