@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-make: pg290_memcpy.c 
-	$(CC) $(CFLAGS) -o pg290_memcpy pg290_memcpy.c;
+make: memcpy.c 
+	$(CC) $(CFLAGS) -o memcpy_op memcpy.c;
  
 clean: 
-	rm -rf pg290_memcpy
+	rm -rf memcpy
      
