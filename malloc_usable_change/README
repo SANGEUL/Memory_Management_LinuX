@@ -9,18 +9,18 @@ size_t malloc_usable_size (void *ptr);
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ make
-gcc -Wall -g -o pg281_malloc_usable_size pg281_malloc_usable_size.c;
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc_usable_size$ make
+gcc -Wall -g -o malloc_usable_size malloc_usable_size.c;
+linux@linux:~/Linux_programming/Memory_Management/malloc_usable_size$ 
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ ./pg281_malloc_usable_size 
+linux@linux:~/Linux_programming/Memory_Management/malloc_usable_size$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc_usable_size$ ./malloc_usable_size 
 
  we can actually use 'size : 24' bytes of 'buf'
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc_usable_size$ 
 
 ===============================================================================================
 Program Flow
