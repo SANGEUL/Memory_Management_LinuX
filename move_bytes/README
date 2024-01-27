@@ -5,16 +5,16 @@ void * memmove (void *dst, const void *src, size_t n);
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ make
-gcc -Wall -g -o pg290_Mov_Byte pg290_Mov_Byte.c;
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ 
+linux@linux:~/Linux_programming/Memory_Management/Mov_Byte$ make
+gcc -Wall -g -o Mov_Byte Mov_Byte.c;
+linux@linux:~/Linux_programming/Memory_Management/Mov_Byte$ 
 
 ===============================================================================================
 Execution:
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ ./pg290_Mov_Byte
+linux@linux:~/Linux_programming/Memory_Management/Mov_Byte$ ./Mov_Byte
 Before memmove dest = communicate, src = Applications
 After memmove dest = Applicatite, src = Applications
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$
+linux@linux:~/Linux_programming/Memory_Management/Mov_Byte$
 
 ===============================================================================================
 Program Flow
