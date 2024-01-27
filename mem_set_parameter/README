@@ -1,0 +1,33 @@
+Program Intention :
+===============================================================================================
+Many of the allocation operations used are limited and controlled by kernel parameters that the
+programmer can change. To do so, use the mallopt( ) call:
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ make
+gcc -Wall -g -o pg279_mallopt pg279_mallopt.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ ./pg279_mallopt 
+
+ use mmap( ) for all allocations over 64 KB 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ 
+
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    A call to mallopt() sets the memory-management-related parameter specified by param to the
+    value specified by value .
+    On success, the call returns a nonzero value; 
+    on failure, it returns 0 . Note that mallopt( ) does not set errno. 
+    It also tends to always return successfully, so avoid any optimism about getting useful 
+    information from the return value.
+
+
+
+
