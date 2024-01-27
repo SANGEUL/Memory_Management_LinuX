@@ -1,0 +1,30 @@
+Program Intention :
+===============================================================================================
+Similar to strcmp( ) , memcmp( ) compares two chunks of memory for equivalence
+
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ make
+gcc -Wall -g -o pg289_Compar_Bytes pg289_Compar_Bytes.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ ./pg289_Compar_Bytes 
+
+ SAME SIZE OF MEMORY IS ALLOCATED 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ 
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    int memcmp (const void *s1, const void *s2, size_t n);
+    An invocation compares the first n bytes of s1 to s2 , and returns 0 if the blocks of
+    memory are equivalent, a value less than zero if s1 is less than s2 , and a value greater
+    than zero if s1 is greater than s2 .
+
+
+
+
