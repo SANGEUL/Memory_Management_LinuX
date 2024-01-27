@@ -6,16 +6,16 @@ programmer can change. To do so, use the mallopt( ) call:
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ make
-gcc -Wall -g -o pg279_mallopt pg279_mallopt.c;
+linux@linux:~/Linux_programming/Memory_Management/mallopt$ make
+gcc -Wall -g -o mallopt mallopt.c;
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ ./pg279_mallopt 
+linux@linux:~/Linux_programming/Memory_Management/mallopt$ ./mallopt 
 
  use mmap( ) for all allocations over 64 KB 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg279_mallopt$ 
+linux@linux:~/Linux_programming/Memory_Management/mallopt$ 
 
 
 ===============================================================================================
