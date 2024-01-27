@@ -1,0 +1,28 @@
+Program Intention :
+===============================================================================================
+memmove( ) copies the first n bytes of src to dst , returning dst.
+void * memmove (void *dst, const void *src, size_t n);
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ make
+gcc -Wall -g -o pg290_Mov_Byte pg290_Mov_Byte.c;
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ 
+
+===============================================================================================
+Execution:
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$ ./pg290_Mov_Byte
+Before memmove dest = communicate, src = Applications
+After memmove dest = Applicatite, src = Applications
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_Mov_Byte$
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    memmove( ) can safely handle overlapping memory regions.
+    This allows bytes of memory to shift up or down within a given region.
+
+
+
+
+
