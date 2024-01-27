@@ -5,16 +5,16 @@ Among the collection of memory-manipulating functions, the most common is easily
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg288_set_byte$ make
-gcc -Wall -g -o pg288_set_byte pg288_set_byte.c;
+linux@linux:~/Linux_programming/Memory_Management/set_byte$ make
+gcc -Wall -g -o set_byte set_byte.c;
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg288_set_byte$ ./pg288_set_byte 
+linux@linux:~/Linux_programming/Memory_Management/set_byte$ ./set_byte 
 
  SUCCESSFULLY SET  THE MEM 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg288_set_byte$
+linux@linux:~/Linux_programming/Memory_Management/set_byte$
 
 ===============================================================================================
 Program Flow
