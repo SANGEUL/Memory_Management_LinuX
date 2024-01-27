@@ -1,0 +1,36 @@
+Program Intention :
+===============================================================================================
+The function malloc_usable_size()  allows a program to ask how many usable bytes a given memory
+allocation contains
+#include <malloc.h>
+size_t malloc_usable_size (void *ptr);
+
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ make
+gcc -Wall -g -o pg281_malloc_usable_size pg281_malloc_usable_size.c;
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ ./pg281_malloc_usable_size 
+
+ we can actually use 'size : 24' bytes of 'buf'
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg281_malloc_usable_size$ 
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    A successful call to malloc_usable_size( ) returns the actual allocation size of the chunk
+    of memory pointed to by ptr. 
+    Because glibc may round up allocations to fit within an existing chunk or anonymous mapping,
+    the usable space in an allocationcan be larger than requested. 
+    The allocation will never be smaller than requested.
+
+
+
+
