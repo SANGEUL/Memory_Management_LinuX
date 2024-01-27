@@ -1,0 +1,34 @@
+Program Intention :
+===============================================================================================
+malloc_trim() allows a program to force glibc to return all immediately freeable memory to
+the kernel
+
+
+===============================================================================================
+COMPILE :
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ make
+gcc -Wall -g -o pg282_malloc_trim pg282_malloc_trim.c;
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ 
+
+===============================================================================================
+OUTPUT:
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ ./pg282_malloc_trim 
+
+ use mmap( ) for all allocations over 64 KB 
+
+ shrinks the data segment was successful 
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ 
+
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    A successful call to malloc_trim( ) shrinks the data segment as much as possible,minus 
+    padding bytes, which are reserved. 
+    It then returns 1 . On failure, the call returns 0 . 
+    Normally, glibc performs such shrinking automatically, whenever the freeable memory reaches 
+    M_TRIM_THRESHOLD bytes. It uses a padding of M_TOP_PAD
+
+
+
+
