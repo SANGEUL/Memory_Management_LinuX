@@ -6,16 +6,16 @@ Similar to strcmp( ) , memcmp( ) compares two chunks of memory for equivalence
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ make
-gcc -Wall -g -o pg289_Compar_Bytes pg289_Compar_Bytes.c;
+linux@linux:~/Linux_programming/Memory_Management/Compar_Bytes$ make
+gcc -Wall -g -o Compar_Bytes Compar_Bytes.c;
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ ./pg289_Compar_Bytes 
+linux@linux:~/Linux_programming/Memory_Management/Compar_Bytes$ ./Compar_Bytes 
 
  SAME SIZE OF MEMORY IS ALLOCATED 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg289_Compar_Bytes$ 
+linux@linux:~/Linux_programming/Memory_Management/Compar_Bytes$ 
 
 ===============================================================================================
 Program Flow
