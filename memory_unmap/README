@@ -1,0 +1,31 @@
+Program Intention :
+===============================================================================================
+system call munmap( ) destroys a memory mapping
+Creating an anonymous memory mapping is actually easier than creating a file backed mapping, as
+there is no file to open and manage.
+
+===============================================================================================
+COMPILE :
+
+  all done with 'p', so give back the 512 KB mapping
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_munmap$ make
+gcc -Wall -g -o pg278_munmap pg278_munmap.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_munmap$ ./pg278_munmap
+
+  all done with 'p', so give back the 512 KB mapping
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_munmap$ 
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    The system call munmap( ) frees an anonymous mapping, returning the allocated memory to 
+    the kernel.
+
+
+
+
+
