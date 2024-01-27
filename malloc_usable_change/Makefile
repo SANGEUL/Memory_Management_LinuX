@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-make: pg281_malloc_usable_size.c
-	$(CC) $(CFLAGS) -o pg281_malloc_usable_size pg281_malloc_usable_size.c;
+make: malloc_usable_size.c
+	$(CC) $(CFLAGS) -o malloc_usable_size malloc_usable_size.c;
 
 clean: 
-	rm -rf pg281_malloc_usable_size
+	rm -rf malloc_usable_size
      
