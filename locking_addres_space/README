@@ -7,15 +7,15 @@ ensuring that they are never paged out to disk. The first locks a given interval
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ make
-gcc -Wall -g -o pg293_Locking_address_Space  pg293_Locking_address_Space.c;
+linux@linux:~/Linux_programming/Signals/Locking_address_Space$ make
+gcc -Wall -g -o Locking_address_Space  Locking_address_Space.c;
 
 ===============================================================================================
 OUTPUT:
-linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ ./pg293_Locking_address_Space 
+linux@linux:~/Linux_programming/Signals/Locking_address_Space$ ./Locking_address_Space 
 Pin the pages successfully
 Unpin the pages successfully
-linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ 
+linux@linux:~/Linux_programming/Signals/Locking_address_Space$ 
 
 ===============================================================================================
 Program Flow
