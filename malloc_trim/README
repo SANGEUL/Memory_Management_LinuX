@@ -6,18 +6,18 @@ the kernel
 
 ===============================================================================================
 COMPILE :
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ make
-gcc -Wall -g -o pg282_malloc_trim pg282_malloc_trim.c;
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc_trim$ make
+gcc -Wall -g -o malloc_trim malloc_trim.c;
+linux@linux:~/Linux_programming/Memory_Management/malloc_trim$ 
 
 ===============================================================================================
 OUTPUT:
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ ./pg282_malloc_trim 
+linux@linux:~/Linux_programming/Memory_Management/malloc_trim$ ./malloc_trim 
 
  use mmap( ) for all allocations over 64 KB 
 
  shrinks the data segment was successful 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg282_malloc_trim$ 
+linux@linux:~/Linux_programming/Memory_Management/malloc_trim$ 
 
 
 ===============================================================================================
