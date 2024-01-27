@@ -1,0 +1,38 @@
+Program Intention :
+===============================================================================================
+Linux has always had a /dev/zero device, and provided the ability to map this file and
+obtain zero-filled memory.
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ make
+gcc -Wall -g -o pg278_Map_dev_zero pg278_Map_dev_zero.c;
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ 
+
+===============================================================================================
+Execution:
+
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ ./pg278_Map_dev_zero
+
+ONLY ONE ARGUMENT IS PASSED
+ENTER THE SECOND ARGUMENT
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$ ./pg278_Map_dev_zero /dev/zero
+
+  map [0,page size) of /dev/zero
+
+ 'p' points at one page of memory, use it...
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg278_Map_dev_zero$
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    Memory mapped and unmapped using munmap().
+    This approach involves the additional system call overhead of opening and closing the device
+    file. Thus, anonymous memory is a faster solution.
+
+
+
+
