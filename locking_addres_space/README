@@ -1,0 +1,36 @@
+Program Intention :
+===============================================================================================
+POSIX 1003.1b-1993 defines two interfaces for “locking” one or more pages into physical memory,
+ensuring that they are never paged out to disk. The first locks a given interval of addresses.
+
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ make
+gcc -Wall -g -o pg293_Locking_address_Space  pg293_Locking_address_Space.c;
+
+===============================================================================================
+OUTPUT:
+linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ ./pg293_Locking_address_Space 
+Pin the pages successfully
+Unpin the pages successfully
+linux@linux:~/Linux_programming/Chapter8_Signals/pg293_Locking_address_Space$ 
+
+===============================================================================================
+Program Flow
+===============================================================================================
+    #include <sys/mman.h>
+    int mlock (const void *addr, size_t len);
+    
+    A call to mlock() locks the virtual memory starting at addr , and extending for len bytes 
+    into physical memory.
+    On success, the call returns 0 ; on failure, the call returns -1 , and sets errno as 
+    appropriate.
+    A successful call locks all physical pages that contain [addr,addr+len) in memory.
+    For example, if a call specifies only a single byte, the entire page in which that byte
+    resides is locked into memory.
+
+
+
+
