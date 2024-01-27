@@ -8,16 +8,16 @@ in <string.h> header file.
 ===============================================================================================
 COMPILE :
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$ make
-gcc -Wall -g -o pg290_memcpy pg290_memcpy.c;
+linux@linux:~/Linux_programming/Memory_Management/memcpy$ make
+gcc -Wall -g -o memcpy_op memcpy.c;
 
 ===============================================================================================
 Execution:
 
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$ ./pg290_memcpy
+linux@linux:~/Linux_programming/Memory_Management/memcpy$ ./memcpy
 Before memcpy dest = the same!!
 After memcpy dest = function behaves
-linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$
+linux@linux:~/Linux_programming/Memory_Management/memcpy$
 
 ===============================================================================================
 Program Flow
