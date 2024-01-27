@@ -1,0 +1,31 @@
+Program Intention :
+===============================================================================================
+The call to memcpy() returns a pointer to the next byte in dst after c , or NULL if c 
+was not found.
+memcpy() is used to copy a block of memory from one location to another. It is declared 
+in <string.h> header file.
+
+===============================================================================================
+COMPILE :
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$ make
+gcc -Wall -g -o pg290_memcpy pg290_memcpy.c;
+
+===============================================================================================
+Execution:
+
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$ ./pg290_memcpy
+Before memcpy dest = the same!!
+After memcpy dest = function behaves
+linux@linux:~/Linux_programming/Chapter7_Memory_Management/pg290_memcpy$
+
+===============================================================================================
+Program Flow
+===============================================================================================
+	void * memcpy (void *dst, const void *src, size_t n);
+	It copies “src” bytes from address “dst” to address “to”.
+	It returns a pointer to the memory location where data is copied.
+
+
+
+
